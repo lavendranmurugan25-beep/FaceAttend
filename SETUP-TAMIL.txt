@@ -1,0 +1,36 @@
+FACE ATTENDANCE SYSTEM - FIXED VERSION
+
+1. Intha full folder-a copy pannunga:
+   C:\xampp\htdocs\attendance\Face-Recognition-Attendance-System-FIXED\
+
+2. XAMPP-la Apache + MySQL START pannunga.
+
+3. Browser-la phpMyAdmin open pannunga:
+   http://localhost/phpmyadmin
+
+4. Import pannunga:
+   database\faceattend_setup.sql
+
+5. Website open pannunga:
+   http://localhost/attendance/Face-Recognition-Attendance-System-FIXED/.vscode/index.html
+
+ADMIN LOGIN
+Username: admin
+Password: admin123
+
+STUDENT LOGIN
+Student ID: Register Student page-la create panna ID
+Default Password: student123
+
+CORRECT FLOW
+Admin Login -> Register Student -> Face Registration -> Start Camera -> Capture Face -> Save Face -> Attendance -> Start Camera -> Scan Face
+
+IMPORTANT STATUS RULE
+- Student register pannina udane: Face Not Registered
+- Face capture + Save Face successful aana mattum: Face Registered
+- Page refresh pannalum database status thaan kaatum
+- Oru student status vera student-ku pogathu
+
+FACE RECOGNITION
+- face-api.js JavaScript CDN load aagurathukku internet connection venum.
+- AI model files project-la local `models` folder-la irukku.
